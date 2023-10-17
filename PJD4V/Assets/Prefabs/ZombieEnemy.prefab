@@ -43,8 +43,8 @@ GameObject:
   - component: {fileID: 8249972171132823334}
   - component: {fileID: 8249972171132823335}
   - component: {fileID: 2009076214}
-  - component: {fileID: 3196152322748715750}
   - component: {fileID: 1180855973}
+  - component: {fileID: 3014691703934088829}
   m_Layer: 0
   m_Name: ZombieEnemy
   m_TagString: Enemy
@@ -166,25 +166,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5038624, y: 1.4806446}
   m_EdgeRadius: 0
---- !u!114 &3196152322748715750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8249972171132823332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0cd7bffc687745d6bc82eb5c382dd47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxEnergy: 30
-  damage: 30
-  moveSpeed: 2
-  useTransform: 1
-  shouldFlip: 1
-  movePosition: {x: 0, y: 0}
-  moveDestination: {fileID: 1605953378}
 --- !u!82 &1180855973
 AudioSource:
   m_ObjectHideFlags: 0
@@ -281,3 +262,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3014691703934088829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8249972171132823332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23e1427762be084ab5dfa5cec062782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
