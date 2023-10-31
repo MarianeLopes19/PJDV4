@@ -8666,11 +8666,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 4.62
       objectReference: {fileID: 0}
+    - target: {fileID: 4511386125052714252, guid: eb4e632efab227440b607e857f6f3571, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8d05129e627a08d4886fef4e3fc944aa, type: 2}
     - target: {fileID: 7291387291255213142, guid: eb4e632efab227440b607e857f6f3571, type: 3}
       propertyPath: changeDirectionTime
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7291387291255213142, guid: eb4e632efab227440b607e857f6f3571, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eb4e632efab227440b607e857f6f3571, type: 3}
 --- !u!1 &4511386124771691771 stripped
 GameObject:
@@ -8687,7 +8692,7 @@ Animator:
   m_GameObject: {fileID: 4511386124771691771}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8d05129e627a08d4886fef4e3fc944aa, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2fad0e71fed016c4dbaee66c540028a1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8719,6 +8724,8 @@ MonoBehaviour:
   limiteDireita: {fileID: 1441193793}
   velocidadePerseguicao: 2
   velocidadePatrulha: 5
+  posicaoInicial: {x: 0, y: 0, z: 0}
+  perseguindo: 0
 --- !u!114 &4511386124771691776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8753,6 +8760,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4511386124771691780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4511386124771691771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23e1427762be084ab5dfa5cec062782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeDirectionTime: 5
 --- !u!1001 &4967199631963937948
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class caminhada : StateMachineBehaviour
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex){
 
-        myEnemy = animator.GetComponent<EnemyController1>();
+        myEnemy = animator.gameObject.GetComponent<EnemyController1>();
 
         if(Random.value < 0.5f){
 
@@ -18,8 +18,7 @@ public class caminhada : StateMachineBehaviour
             myEnemy.SetWalkDirection(Vector2.right);
         }
 
-
-
+        
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex){
